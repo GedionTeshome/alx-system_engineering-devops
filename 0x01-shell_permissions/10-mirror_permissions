@@ -1,0 +1,3 @@
+#!/bin/bash
+a = `stat -c '%a' olleh` 
+chmod $a hello
