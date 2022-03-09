@@ -1,6 +1,2 @@
 #!/bin/bash
-#echo {a..z}{a..z} | 
-#printf "%s\n" {{a..z},{a..z}}
-perl -le '@c = ("a".."z","a".."z");
-          for $a (@c){for$b(@c){
-            print "$a$b"}}'
+perl -le '@c = ("a".."z","a".."z") | for $a (@c){for$b(@c){ print "$a$b"}}'
