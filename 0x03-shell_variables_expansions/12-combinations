@@ -1,2 +1,2 @@
 #!/bin/bash
-perl -le '@c = ("a".."z","a".."z") | for $a (@c){for$b(@c){ print "$a$b"}}'
+echo {a..z}{a..z} | xargs -n 1 | grep -v 'oo
